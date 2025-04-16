@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './components/NavBar';
 import Footer from './components/Footer';
 import MoveToTop from './components/moveToTop';
+import ParticlesBackground from './components/ParticlesBackground';
+import NeonCursor from './components/NeonCursor';
 
 import Home from './camspages/home';
 import About from './camspages/About';
@@ -10,17 +12,21 @@ import Project from './camspages/Projects';
 
 function App() {
   return (
-    <Router>
-      <Nav />
-      <MoveToTop />
-      <Routes>
-        <Route path="/" element={<Home />} /> {/* Updated to '/' */}
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/projects" element={<Project />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <div style={{ cursor: "none" }}>
+      <Router>
+        <NeonCursor />
+        <ParticlesBackground />
+        <Nav />
+        <MoveToTop />
+        <Routes>
+          <Route path="/" element={<Home />} /> {/* Updated to '/' */}
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/projects" element={<Project />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 

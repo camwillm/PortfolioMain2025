@@ -1,35 +1,92 @@
-// Components/Navbar.scss
 .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 70px;
+    top: 0;
+    transition: all 0.7s ease;
+}
+
+.blur {
+    background-color: rgba(1, 17, 26, 0.55);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px #2d0057;
+}
+
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #111;
-    color: white;
+    width: 90%;
+    max-width: 1200px;
+}
 
-    .logo a {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: white;
-        text-decoration: none;
+.nav-logo a {
+    font-size: 28px;
+    color: #9067c6;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.nav-logo a:hover {
+    text-shadow: 0 0 6px #caa7ff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links li a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #c2c1c2;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background: #ffffff;
+        border-radius: 2px;
+        transition: width 0.3s ease;
     }
 
-    .nav-links {
-        list-style: none;
-        display: flex;
-        gap: 1.5rem;
-
-        li {
-            a {
-                color: white;
-                text-decoration: none;
-                font-weight: 500;
-                transition: color 0.2s;
-
-                &:hover {
-                    color: #00bfff;
-                }
-            }
-        }
+    &:hover::after {
+        width: 100%;
     }
+
+    &:hover {
+        color: #ffffff;
+        text-shadow: 0 0 5px #ffffff, 0 0 10px #8c52ff;
+    }
+}
+
+.nav-icon {
+    font-size: 22px;
+    transition: 0.3s ease;
+}
+
+.nav-links li a:hover .nav-icon {
+    color: #ffffff;
+    filter: drop-shadow(0 0 5px #8c52ff);
+}
+
+.active a {
+    color: #ffffff;
+    text-shadow: 0 0 8px #8c52ff;
 }
