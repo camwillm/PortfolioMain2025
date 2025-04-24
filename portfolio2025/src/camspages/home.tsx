@@ -1,3 +1,4 @@
+import React from "react";
 import "./Home.scss";
 import { Link } from "react-router-dom";
 import { FaArrowRight, FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
@@ -16,7 +17,7 @@ const Home = () => {
                 <a href="https://twitter.com/camwillm" target="_blank" rel="noopener noreferrer">
                     <FaTwitter />
                 </a>
-                <a href="https://instagram.com/camwillm" target="_blank" rel="noopener noreferrer">
+                <a href="https://instagram.com/your_instagram" target="_blank" rel="noopener noreferrer">
                     <FaInstagram />
                 </a>
                 <a href="https://leetcode.com/your_leetcode" target="_blank" rel="noopener noreferrer">

@@ -36,7 +36,7 @@ const ParticlesBackground = ({ id = "tsparticles" }: ParticlesBackgroundProps) =
                 type: "circle"
             },
             opacity: {
-                value: { min: 0.1, max: 0.6 }
+                value: { min: 0.7, max: 1.0 }
             },
             size: {
                 value: { min: 0.5, max: 2.5 },
