@@ -1,8 +1,27 @@
-// Components/Footer.scss
 .footer {
+    width: 100%;
+    padding: 0.5rem 0.1rem;
+    background-color: #0b0f1a; /* Match your dark theme */
+    color: #d6d6e7; /* Soft white text */
     text-align: center;
-    padding: 1rem;
-    background-color: #111;
-    color: white;
     font-size: 0.9rem;
-}
+    font-family: "Raleway", sans-serif;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .footer-credit {
+      font-size: 0.8rem;
+      color: #7aa2f7; /* Soft blue */
+    }
+  }
+  

@@ -1,0 +1,29 @@
+.social-sidebar {
+    position: fixed;
+    top: 50%;
+    left: 2rem; // or adjust based on your design
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    z-index: 1000;
+  
+    a {
+        color: #d1bfff;
+        text-shadow: 0 0 8px rgba(162, 89, 255, 0.6);
+      font-size: 1.8rem;
+      transition: color 0.3s, transform 0.3s;
+  
+      &:hover {
+        color: #a259ff; // your accent color
+        transform: scale(1.2);
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .social-sidebar {
+      display: none;
+    }
+  }
+  

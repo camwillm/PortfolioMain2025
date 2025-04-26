@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import MoveToTop from './components/moveToTop';
 import ParticlesBackground from './components/ParticlesBackground';
 import NeonCursor from './components/NeonCursor';
+import SocialSidebar from './components/SocialSideBar';
 
 import Home from './camspages/home';
 import About from './camspages/About';
@@ -17,9 +18,10 @@ function App() {
         <NeonCursor />
         <ParticlesBackground />
         <Nav />
+        <SocialSidebar />
         <MoveToTop />
         <Routes>
-          <Route path="/" element={<Home />} /> {/* Updated to '/' */}
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/projects" element={<Project />} />

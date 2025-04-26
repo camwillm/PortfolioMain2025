@@ -4,8 +4,8 @@ import "./Resume.scss";
 const Resume = () => {
     return (
         <div className="resume">
-            <h1>Cameron Williams</h1>
-            <p>443-960-5837 | Baltimore, MD, 21128 | camwillmofficial@gmail.com</p>
+            <h1>Resume</h1>
+            <p>| Baltimore, MD, 21128 | camwillmofficial@gmail.com |</p>
 
             <section className="resume-section">
                 <h2>Summary</h2>

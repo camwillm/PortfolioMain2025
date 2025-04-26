@@ -6,75 +6,90 @@ import type { ISourceOptions } from "tsparticles-engine";
 import "./ParticlesBackground.scss";
 
 type ParticlesBackgroundProps = {
-    id?: string;
+  id?: string;
 };
 
 const ParticlesBackground = ({ id = "tsparticles" }: ParticlesBackgroundProps) => {
-    const options: ISourceOptions = useMemo(() => ({
-        background: {
-            color: "#0a0114"
-        },
-        fullScreen: {
-            enable: true,
-            zIndex: -1
-        },
-        particles: {
-            number: {
-                value: 150,
-                density: { enable: true, area: 1000 }
-            },
-            color: {
-                value: [
-                    "#ffffff",
-                    "#b4d2ff",
-                    "#d1bfff",
-                    "#a259ff",
-                    "#7e5bef"
-                ]
-            },
-            shape: {
-                type: "circle"
-            },
-            opacity: {
-                value: { min: 0.7, max: 1.0 }
-            },
-            size: {
-                value: { min: 0.5, max: 2.5 },
-                random: true
-            },
-            move: {
-                enable: true,
-                speed: 0.2,
-                direction: "none",
-                random: true,
-                straight: false,
-                outModes: { default: "out" }
-            }
-        },
-        detectRetina: true,
-        interactivity: {
-            events: {
-                onHover: {
-                    enable: true,
-                    mode: "bubble"
-                }
-            },
-            modes: {
-                bubble: {
-                    distance: 100,
-                    duration: 2,
-                    size: 4,
-                    opacity: 0.8
-                }
-            }
+  const options: ISourceOptions = useMemo(() => ({
+    background: {
+      color: "#070014" // Deep galaxy navy
+    },
+    fullScreen: {
+      enable: true,
+      zIndex: -1
+    },
+    particles: {
+      number: {
+        value: 500,
+        density: {
+          enable: true,
+          area: 900
         }
-    }), []);
+      },
+      color: {
+        value: [
+          "#6e6e85",
+          "#5a5a80",
+          "#7c7c9c",
+          "#646480", 
+          "#8a8aa8", 
+          "#a0a0c0"  
+        ]
+      },      
+      shape: {
+        type: "circle"
+      },
+      opacity: {
+        value: {
+          min: 0.2,
+          max: 0.6
+        },
+        random: {
+          enable: true,
+          minimumValue: 0.2
+        }
+      },
+      size: {
+        value: {
+          min: 0.5,
+          max: 2.5
+        },
+        random: true
+      },
+      move: {
+        enable: true,
+        speed: 0.2,
+        direction: "none",
+        random: true,
+        straight: false,
+        outModes: {
+          default: "out"
+        }
+      }
+    },
+    detectRetina: true,
+    interactivity: {
+      events: {
+        onHover: {
+          enable: false
+        },
+        onClick: {
+          enable: false
+        }
+      },
+      modes: {}
+    }
+  }), []);
 
-    const particlesInit = useCallback(async (engine: Engine): Promise<void> => {
-        await loadSlim(engine);
-    }, []);
+  const particlesInit = useCallback(async (engine: Engine): Promise<void> => {
+    await loadSlim(engine);
+  }, []);
 
-    return <Particles id={id} init={particlesInit} options={options} />;
+  return (
+    <div className="particles-container">
+      <Particles id={id} init={particlesInit} options={options} />
+    </div>
+  );
 };
 
 export default ParticlesBackground;
