@@ -1,14 +1,39 @@
-.home-page {
-    padding: 2rem;
-    text-align: center;
+.about-page {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    color: #e7e7e7;
+    position: relative;
+    z-index: 1;
 
     h1 {
         font-size: 3rem;
-        color: #222;
+        color: #a259ff;
+        margin-bottom: 2rem;
+        text-align: center;
     }
 
-    p {
+    .about-intro {
         font-size: 1.2rem;
-        color: #666;
+        margin-bottom: 3rem;
+        text-align: center;
+        color: #ccc;
+    }
+
+    .about-section {
+        margin-bottom: 3rem;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #b993ff;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #cccccc;
+            line-height: 1.7;
+        }
     }
 }
