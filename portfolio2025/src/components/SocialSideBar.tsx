@@ -8,7 +8,7 @@ const SocialSidebar = () => {
             <a href="https://github.com/camwillm" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
             </a>
-            <a href="https://linkedin.com/in/camwillm" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/cameron-williams-52a32028a/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
             </a>
             <a href="https://twitter.com/camwillm" target="_blank" rel="noopener noreferrer">
