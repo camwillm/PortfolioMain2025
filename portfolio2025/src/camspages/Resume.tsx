@@ -1,74 +1,93 @@
-import React from "react";
-import "./Resume.scss";
+import {
+  SiJavascript, SiPython, SiRust, SiZig,
+  SiHtml5, SiCss3, SiReact, SiTailwindcss,
+  SiDocker, SiSupabase, SiPostgresql, SiGithub
+} from "react-icons/si";
+
+import { FaJava } from "react-icons/fa";
+import { BsFiletypeScss } from "react-icons/bs";
+import { FaAws } from "react-icons/fa";
+
+import "./resume.scss";
 
 const Resume = () => {
-    return (
-        <div className="resume">
-            <h1>Resume</h1>
-            <p>| Baltimore, MD, 21128 | camwillmofficial@gmail.com |</p>
-
-            <section className="resume-section">
-                <h2>Summary</h2>
-                <p>
-                    A motivated computer science student with a 3.51 GPA at Morgan State University. Experienced in full-stack development,
-                    cloud deployment, and Agile methodologies. Passionate about building impactful, scalable solutions in team environments.
-                </p>
-            </section>
-
-            <section className="resume-section">
-                <h2>Education</h2>
-                <div className="resume-item">
-                    <h3>Morgan State University</h3>
-                    <p>Bachelor of Computer Science: Software Development – May 2026</p>
-                </div>
-                <div className="resume-item">
-                    <h3>The Community College of Baltimore County</h3>
-                    <p>General Education: Dual Enrollment – May 2023</p>
-                </div>
-            </section>
-
-            <section className="resume-section">
-                <h2>Programming Skills</h2>
-                <ul className="skills-list">
-                    <li><strong>Programming Languages:</strong> Python, JavaScript, Java, SQL, Rust, Zig</li>
-                    <li><strong>Web Development:</strong> HTML, CSS, ReactJS, Tailwind, SCSS, REST APIs, Web Services</li>
-                    <li><strong>Developer Tooling:</strong> Git, GitHub, Docker</li>
-                    <li><strong>Databases and Cloud:</strong> MySQL, Supabase, PostgreSQL, AWS</li>
+  return (
+    <div className="resume-wrapper">
+      <h1 className="resume-title">Resume</h1>
+      <div className="resume-line">
+        {/* Timeline Section */}
+        <div className="resume-entry">
+          <div className="dot" style={{ backgroundColor: "#4f46e5" }}></div>
+          <div className="resume-content">
+            <h2>Timeline</h2>
+            <div className="entry-group">
+              <div>
+                <strong>MASTERMND</strong> <span className="date">2023 – Present</span>
+                <em>Software Development Intern</em>
+                <ul>
+                  <li>Built & maintained web apps using Node.js, React, and AWS.</li>
                 </ul>
-            </section>
-
-            <section className="resume-section">
-                <h2>Work Experience</h2>
-                <div className="resume-item">
-                    <h3>Intern – MASTERMND</h3>
-                    <p>May 2023 – Present | Upper Marlboro, MD</p>
-                    <ul>
-                        <li>Developed and managed 3 web applications using Node.js, React, and SCSS.</li>
-                        <li>Integrated backend services with AWS, including EC2, S3, and RDS.</li>
-                        <li>Participated in Agile sprints, contributing to planning, development, and retrospectives.</li>
-                    </ul>
-                </div>
-
-                <div className="resume-item">
-                    <h3>Waiter – Kobe Steaks Japanese Restaurant</h3>
-                    <p>Feb 2025 – Present | White Marsh, MD</p>
-                    <ul>
-                        <li>Delivered exceptional customer service, managing large parties up to 20 guests.</li>
-                        <li>Recommended high-margin items to maximize sales and guest satisfaction.</li>
-                    </ul>
-                </div>
-
-                <div className="resume-item">
-                    <h3>Owner/Operator – Landscaping Business</h3>
-                    <p>Apr 2017 – Jan 2024 | Baltimore, MD</p>
-                    <ul>
-                        <li>Founded and operated a landscaping business with 50+ recurring clients.</li>
-                        <li>Managed all aspects from scheduling to invoicing and service delivery.</li>
-                    </ul>
-                </div>
-            </section>
+              </div>
+              <div>
+                <strong>Landscaping Business</strong> <span className="date">2017 – 2024</span>
+                <em>Owner/Operator</em>
+                <ul><li>Ran a 50+ client operation from scratch in Baltimore.</li></ul>
+              </div>
+              <div>
+                <strong>Morgan State University</strong> <span className="date">2022 – 2026</span>
+                <em>B.S. in Computer Science</em>
+              </div>
+              <div>
+                <strong>CCBC</strong> <span className="date">2021 – 2023</span>
+                <em>Dual Enrollment – General Education</em>
+              </div>
+            </div>
+          </div>
         </div>
-    );
+
+        {/* Skills Section */}
+        <div className="resume-entry">
+          <div className="dot" style={{ backgroundColor: "#f59e0b" }}></div>
+          <div className="resume-content">
+            <h2>Skills</h2>
+
+            <div className="skill-group">
+              <h3>Programming Languages</h3>
+              <ul className="skill-icons">
+                <li><SiPython /> Python</li>
+                <li><SiJavascript /> JavaScript</li>
+                <li><FaJava /> Java</li>
+                <li><SiRust /> Rust</li>
+                <li><SiZig /> Zig</li>
+              </ul>
+            </div>
+
+            <div className="skill-group">
+              <h3>Web Development</h3>
+              <ul className="skill-icons">
+                <li><SiHtml5 /> HTML</li>
+                <li><SiCss3 /> CSS</li>
+                <li><SiReact /> ReactJS</li>
+                <li><SiTailwindcss /> Tailwind</li>
+                <li><BsFiletypeScss /> SCSS</li>
+              </ul>
+            </div>
+
+            <div className="skill-group">
+              <h3>Cloud & Tooling</h3>
+              <ul className="skill-icons">
+                <li><SiDocker /> Docker</li>
+                <li><SiSupabase /> Supabase</li>
+                <li><SiPostgresql /> PostgreSQL</li>
+                <li><FaAws /> AWS</li>
+                <li><SiGithub /> GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Resume;

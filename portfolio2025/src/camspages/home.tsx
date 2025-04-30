@@ -26,7 +26,7 @@ const Home = () => {
         <div className="code-profile-box">
           <pre>
             <Typewriter
-              words={[`CameronWilliams = {\n  fullstack: true,\n  frontend: ['React', 'Tailwind'],\n  backend: ['Node.js', 'Supabase'],\n  learning: ['Zig', 'Rust'],\n  experience: {\n    years: 3,\n    internships: ['MASTERMND'],\n  },\n  tools: ['Git', 'Docker', 'AWS'],\n  preferredEditor: 'VSCode',\n  status: '🚀 Ready to build'\n};`]}
+              words={[`camwillm = {\n  fullstack: true,\n  frontend: ['React', 'Tailwind'],\n  backend: ['Node.js', 'Supabase'],\n  learning: ['Zig', 'Rust'],\n  experience: {\n    years: 3,\n    internships: ['MASTERMND'],\n  },\n  tools: ['Git', 'Docker', 'AWS'],\n  preferredEditor: 'VSCode',\n  status: '🚀 Ready to build'\n};`]}
               loop={5}
               cursor
               cursorStyle="_"

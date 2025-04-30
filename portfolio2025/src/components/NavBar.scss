@@ -8,7 +8,11 @@
     height: 70px;
     top: 0;
     transition: all 0.7s ease;
-}
+  
+    background-color: (1, 17, 26, 0.55); 
+    box-shadow: 0 0 10px #2d0057;
+  }
+  
 
 .blur {
     background-color: rgba(1, 17, 26, 0.55);

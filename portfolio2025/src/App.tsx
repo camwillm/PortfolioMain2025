@@ -6,7 +6,7 @@ import ParticlesBackground from './components/ParticlesBackground';
 import NeonCursor from './components/NeonCursor';
 import SocialSidebar from './components/SocialSideBar';
 
-import Home from './camspages/home';
+import Home from './camspages/Home';
 import About from './camspages/About';
 import Resume from './camspages/Resume';
 import Project from './camspages/Projects';
