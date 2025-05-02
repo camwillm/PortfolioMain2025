@@ -42,7 +42,7 @@ const ParticlesBackground = ({ id = "tsparticles" }: ParticlesBackgroundProps) =
       opacity: {
         value: {
           min: 0.2,
-          max: 0.6
+          max: 0.5
         },
         random: {
           enable: true,

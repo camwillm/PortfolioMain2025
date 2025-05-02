@@ -10,8 +10,7 @@ const Home = () => {
         <div className="intro-text">
           <h1>Hey, I'm Cameron Williams</h1>
           <p>
-            A software developer passionate about building elegant web applications,
-            crafting smooth user experiences, and solving real-world problems with code.
+            A dedicated software developer with a passion for building elegant web applications, health technologies, and financial solutions—committed to delivering seamless user experiences and addressing real-world challenges through innovative code.
           </p>
           <div className="button-group">
             <Link to="/projects" className="explore-btn">
