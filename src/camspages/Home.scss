@@ -1,3 +1,10 @@
+.page-wrapper {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  min-height: 100vh;
+  padding: 2rem;
+}
 .home-page {
     position: relative;
     padding: 4rem 2rem;

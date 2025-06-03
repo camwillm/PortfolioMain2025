@@ -13,10 +13,11 @@ import Project from './camspages/Projects';
 
 function App() {
   return (
-    <div style={{ cursor: "none" }}>
+    <div style={{ cursor: "none", position: "relative" }}>
+      <ParticlesBackground />
+
       <Router>
         <NeonCursor />
-        <ParticlesBackground />
         <Nav />
         <SocialSidebar />
         <MoveToTop />
@@ -31,5 +32,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

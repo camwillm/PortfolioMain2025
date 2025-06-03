@@ -1,22 +1,22 @@
-import ParticlesBackground from "../Components/ParticlesBackground";
+import ParticlesBackground from "../components/ParticlesBackground";
 import './Projects.scss';
 
 const projects = [
   {
-    title: "Roommate Matcher",
-    description: "Web app that helps students find compatible roommates and affordable housing using search by budget, compatibility scores, and more.",
-    tech: ["React", "TypeScript", "Vite", "SCSS", "LocalStorage"],
-    githubStars: "★ 24",
-    link: "https://github.com/camwillm/roommate-matcher",
-    image: "/project-thumbnails/roommate.png", // update to match actual file path
+    title: "The Bear Rooms",
+    description: "iOS-style web app that helps students find and join campus housing groups with personalized profile matching and live previews.",
+    tech: ["React", "Vite", "SCSS", "TypeScript"],
+    githubStars: "★ 1", // update if needed
+    link: "https://github.com/camwillm/ThebearRooms",
+    image: "/project-thumbnails/bear-rooms.png", // ensure this image exists
   },
   {
-    title: "Zig HTML Table Extractor",
-    description: "A Zig-based CLI tool to extract HTML tables to CSVs with both sequential and multithreaded modes. Includes Docker support and timing logs.",
-    tech: ["Zig", "Docker", "CSV", "Multithreading"],
-    githubStars: "★ 8",
-    link: "https://github.com/camwillm/zig-html-table-extractor",
-    image: "/project-thumbnails/zig-extractor.png",
+    title: "Portfolio Website",
+    description: "A responsive portfolio built with React and SCSS, deployed on AWS with custom domain support and animated UI components.",
+    tech: ["React", "TypeScript", "Vite", "SCSS", "AWS"],
+    githubStars: "★ 3", // update if needed
+    link: "https://github.com/camwillm/PortfolioMain2025",
+    image: "/project-thumbnails/portfolio.png", // ensure this image exists
   },
 ];
 

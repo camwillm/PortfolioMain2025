@@ -7,15 +7,15 @@ import {
 import { FaJava } from "react-icons/fa";
 import { BsFiletypeScss } from "react-icons/bs";
 import { FaAws } from "react-icons/fa";
-
+import ParticlesBackground from "../components/ParticlesBackground";
 import "./resume.scss";
 
 const Resume = () => {
   return (
     <div className="resume-wrapper">
+    <ParticlesBackground />
       <h1 className="resume-title">Resume</h1>
       <div className="resume-line">
-        {/* Timeline Section */}
         <div className="resume-entry">
           <div className="dot" style={{ backgroundColor: "#4f46e5" }}></div>
           <div className="resume-content">
@@ -44,8 +44,6 @@ const Resume = () => {
             </div>
           </div>
         </div>
-
-        {/* Skills Section */}
         <div className="resume-entry">
           <div className="dot" style={{ backgroundColor: "#f59e0b" }}></div>
           <div className="resume-content">

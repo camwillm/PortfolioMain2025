@@ -1,8 +1,10 @@
 import "./About.scss";
+import ParticlesBackground from "../components/ParticlesBackground";
 
 const About = () => {
     return (
         <div className="about-page">
+        <ParticlesBackground />
             <h1>About Me</h1>
             <p className="about-intro">
                 I'm Cameron Williams — a passionate software developer, real estate enthusiast, finance student, and entrepreneur. I love creating digital solutions, exploring new industries, and building businesses that solve real-world problems.
