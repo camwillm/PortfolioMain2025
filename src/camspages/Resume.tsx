@@ -7,17 +7,21 @@ import {
 import { FaJava } from "react-icons/fa";
 import { BsFiletypeScss } from "react-icons/bs";
 import { FaAws } from "react-icons/fa";
+import { AiOutlineDownload } from "react-icons/ai";
 import ParticlesBackground from "../components/ParticlesBackground";
 import "./resume.scss";
 
 const Resume = () => {
   return (
     <div className="resume-wrapper">
-    <ParticlesBackground />
+      <ParticlesBackground />
       <h1 className="resume-title">Resume</h1>
+
+
+
       <div className="resume-line">
         <div className="resume-entry">
-          <div className="dot" style={{ backgroundColor: "#4f46e5" }}></div>
+          <div className="dot" style={{ backgroundColor: "#a259ff" }}></div>
           <div className="resume-content">
             <h2>Timeline</h2>
             <div className="entry-group">
@@ -34,7 +38,7 @@ const Resume = () => {
                 <ul><li>Ran a 50+ client operation from scratch in Baltimore.</li></ul>
               </div>
               <div>
-                <strong>Morgan State University</strong> <span className="date">2022 – 2026</span>
+                <strong>Morgan State University</strong> <span className="date">2023 – 2026</span>
                 <em>B.S. in Computer Science</em>
               </div>
               <div>
@@ -44,8 +48,9 @@ const Resume = () => {
             </div>
           </div>
         </div>
+
         <div className="resume-entry">
-          <div className="dot" style={{ backgroundColor: "#f59e0b" }}></div>
+          <div className="dot" style={{ backgroundColor: "#a259ff" }}></div>
           <div className="resume-content">
             <h2>Skills</h2>
 
@@ -81,6 +86,15 @@ const Resume = () => {
                 <li><SiGithub /> GitHub</li>
               </ul>
             </div>
+  
+          <a
+  href="/Cameron_Williams_Resume.pdf"
+  download
+  className="resume-download"
+>
+  <AiOutlineDownload style={{ marginRight: "0.5rem" }} />
+  Download PDF
+</a>
           </div>
         </div>
       </div>

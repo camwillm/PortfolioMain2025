@@ -8,8 +8,20 @@
   align-items: center;
   padding: 4rem 2rem;
   background: transparent;
-  color: #ccd6f6;
+  color: #E6F1FF;
   text-align: center;
+
+  .project-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    padding: 1rem;
+    svg {
+      filter: drop-shadow(0 0 6px #00FDCF);
+      color: #00FDCF;
+    }
+  }
 
   h2 {
     font-size: 2rem;
@@ -22,15 +34,16 @@
     max-width: 900px;
     width: 100%;
   }
+
   .projects-wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 2rem;
-  z-index: 0;
-    }
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    z-index: 0;
+  }
 
   .project-card {
     display: flex;
@@ -46,7 +59,7 @@
 
     &:hover {
       transform: translateY(-4px);
-      background: rgba(26, 46, 77, 0.95);
+      background: rgba(29, 54, 91, 0.98);
     }
 
     .project-image {
@@ -72,7 +85,7 @@
 
       .stars {
         font-size: 0.875rem;
-        color: #8892b0;
+        color: #98AFC7;
       }
 
       .tech-stack {
@@ -80,12 +93,12 @@
 
         span {
           display: inline-block;
-          background: #233554;
+          background: #1C294A;
           padding: 0.3rem 0.5rem;
           border-radius: 4px;
           font-size: 0.75rem;
           margin-right: 0.5rem;
-          color: #64ffda;
+          color: #00FDCF;
         }
       }
     }
@@ -95,11 +108,11 @@
     display: inline-block;
     margin-top: 2rem;
     font-weight: bold;
-    color: #64ffda;
+    color: #00FDCF;
     transition: color 0.3s;
 
     &:hover {
-      color: #a8ffdd;
+      color: #64FFDA;
     }
   }
 }

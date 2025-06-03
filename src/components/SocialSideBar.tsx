@@ -17,7 +17,7 @@ const SocialSidebar = () => {
             <a href="https://instagram.com/camwillm" target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
             </a>
-            <a href="https://leetcode.com/your_leetcode" target="_blank" rel="noopener noreferrer">
+            <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">
                 <SiLeetcode />
             </a>
         </div>

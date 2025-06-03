@@ -1,39 +1,50 @@
 .about-page {
-    padding: 4rem 2rem;
-    max-width: 900px;
-    margin: 0 auto;
-    font-family: 'Raleway', sans-serif;
-    color: #e7e7e7;
-    position: relative;
-    z-index: 1;
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 10vh;
+  font-family: 'Raleway', sans-serif;
+  color: #e7e7e7;
+  position: relative;
+  z-index: 1;
 
-    h1 {
-        font-size: 3rem;
-        color: #ffffff;
-        margin-bottom: 2rem;
-        text-align: center;
+  h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  }
+
+  .about-intro {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #b0bcd3;
+    line-height: 1.8;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-section {
+    margin-bottom: 3.5rem;
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+      border-left: 4px solid #a85ff7;
+      padding-left: 0.75rem;
+      text-shadow: 0 0 6px rgba(168, 95, 247, 0.2);
     }
 
-    .about-intro {
-        font-size: 1.2rem;
-        margin-bottom: 3rem;
-        text-align: center;
-        color: #ccc;
+    p {
+      font-size: 1.1rem;
+      color: #d0d0d0;
+      line-height: 1.75;
+      padding-left: 0.5rem;
     }
-
-    .about-section {
-        margin-bottom: 3rem;
-
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #ffffff;
-        }
-
-        p {
-            font-size: 1.1rem;
-            color: #cccccc;
-            line-height: 1.7;
-        }
-    }
+  }
 }

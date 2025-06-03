@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
 import { BsPerson, BsCodeSlash } from "react-icons/bs";
 import { CgFileDocument } from "react-icons/cg";
+import { SiZig } from "react-icons/si";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -22,8 +23,11 @@ const Navbar = () => {
         <nav className={`navbar ${scrolled ? "blur" : ""}`}>
             <div className="nav-container">
                 <div className="nav-logo">
-                    <Link to="/">🚀 Cam</Link>
-                </div>
+    <Link to="/">
+        <SiZig className="nav-icon react-icon" />
+        Cam
+    </Link>
+</div>
                 <ul className="nav-links">
                     <li className={location.pathname === "/" ? "active" : ""}>
                         <Link to="/">

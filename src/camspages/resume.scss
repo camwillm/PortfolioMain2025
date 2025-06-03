@@ -4,6 +4,25 @@
   margin: 0 auto;
   font-family: 'Raleway', sans-serif;
   color: #e7e7e7;
+  position: relative;
+  z-index: 1;
+  margin-top: 10vh;
+}
+.resume-download {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #a259ff;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #8b3fff;
+  }
 }
 
 .resume-title {
@@ -11,11 +30,14 @@
   color: #a259ff;
   margin-bottom: 2.5rem;
   text-align: left;
+  text-shadow: 0 0 6px rgba(162, 89, 255, 0.3);
+  border-left: 5px solid #a259ff;
+  padding-left: 1rem;
 }
 
 .resume-line {
   position: relative;
-  border-left: 2px solid #444;
+  border-left: 2px solid #333;
   margin-left: 20px;
   padding-left: 2rem;
 }
@@ -31,7 +53,9 @@
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    border: 2px solid #111;
+    border: 2px solid #a259ff;
+    background: #d7a3ff;
+    box-shadow: 0 0 6px #a259ff77;
   }
 
   .resume-content {
@@ -39,6 +63,7 @@
       color: #f47c20;
       margin-bottom: 1rem;
       font-size: 1.6rem;
+      text-shadow: 0 0 4px rgba(244, 124, 32, 0.2);
     }
 
     .entry-group {
@@ -47,7 +72,7 @@
       gap: 1.5rem;
 
       strong {
-        color: #fff;
+        color: #ffffff;
         font-weight: 600;
         font-size: 1.1rem;
       }
@@ -63,7 +88,7 @@
       .date {
         float: right;
         font-size: 0.9rem;
-        color: #999;
+        color: #aaa;
         font-weight: normal;
       }
 
@@ -74,7 +99,17 @@
         li {
           color: #ccc;
           font-size: 0.95rem;
-          line-height: 1.5;
+          line-height: 1.6;
+          position: relative;
+
+          &::before {
+            content: "•";
+            color: #a259ff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1rem;
+            margin-left: -1rem;
+          }
         }
       }
     }
@@ -86,8 +121,9 @@
 
   h3 {
     font-size: 1.1rem;
-    color: #f47c20;
+    color: #a259ff;
     margin-bottom: 0.6rem;
+    text-shadow: 0 0 4px rgba(244, 124, 32, 0.2);
   }
 }
 
@@ -103,12 +139,12 @@
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    background: #2a2a2a;
-    color: #eee;
+    background: #1e1e2e;
+    color: #e0e0e0;
     padding: 0.4rem 0.7rem;
     border-radius: 999px;
     font-size: 0.9rem;
-    transition: background 0.3s;
+    transition: background 0.3s, box-shadow 0.3s;
 
     svg {
       font-size: 1rem;
@@ -116,11 +152,11 @@
 
     &:hover {
       background: #a259ff33;
+      box-shadow: 0 0 8px #a259ff55;
     }
   }
 }
 
-/* Optional: Mobile adjustments */
 @media (max-width: 600px) {
   .resume-title {
     font-size: 2rem;
