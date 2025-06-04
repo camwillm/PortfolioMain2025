@@ -15,13 +15,23 @@ const projects = [
   },
   {
     title: "Portfolio Website",
-    description: "A responsive portfolio built with React and SCSS, deployed on AWS with custom domain support and animated UI components.",
+    description: "A web app built with React that helps users reduce food waste by distributing extra food. Developed for Morgan Hacks 2024.",
     tech: ["React", "TypeScript", "Vite", "SCSS", "AWS"],
-    githubStars: "★ 3",
+    githubStars: "★ 1",
     link: "https://github.com/camwillm/PortfolioMain2025",
     icon: CgWebsite,
     image: null
   },
+  {
+  title: "Food Fix",
+  description: "A React-based web app developed for Morgan Hacks 2024 to combat food waste by helping users discover extra food using ingredients companies have in excess.",
+  tech: ["React"],
+  githubStars: "★ 1",
+  link: "https://github.com/camwillm/FOOD-FIX---Morgan-hacks-2024",
+  icon: CgWebsite,
+  image: null
+    }
+
 ];
 
 export default function Projects() {
